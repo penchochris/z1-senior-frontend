@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 const Rounded = styled.div`
   height: 48px;
-  width: 160px;
+  min-width: 181px;
   box-shadow: 0 10px 20px -5px rgba(47,0,121,0.3);
   border-radius: 24px;
   background-color: #2F0079;

@@ -1,8 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import RoundedButton from '../common/buttons/RoundedButton/RoundedButton';
-import IDBackgroundSvg from '../common/icons/IDBackgroundSvg.svg';
+import RoundedButton from '../../../common/buttons/RoundedButton/RoundedButton';
+import IDBackgroundSvg from '../../../common/icons/IDBackgroundSvg.svg';
 
 const Wrapper = styled.div`
   display: flex;
@@ -25,14 +25,21 @@ const IDContainer = styled.div`
   background-size: 100% auto;
 `;
 
-const IDPictureTaker = () => {
+interface Props {
+  children?: React.ReactNode;
+  handleOnClick: () => void;
+}
+
+const IDChecker = ({ children, handleOnClick }: Props) => {
   return (
     <Wrapper>
       <IDContainer>
-        <RoundedButton handleOnClick={() => console.log('jsjs')}>TAKE PICTURE</RoundedButton>
+        {children}
+        <RoundedButton handleOnClick={handleOnClick}>TAKE PICTURE</RoundedButton>
       </IDContainer>
     </Wrapper>
   )
 }
 
-export default IDPictureTaker;
+
+export default IDChecker;
