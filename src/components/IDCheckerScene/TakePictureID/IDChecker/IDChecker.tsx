@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 import RoundedButton from '../../../common/buttons/RoundedButton/RoundedButton';
-import IDBackgroundSvg from '../../../common/icons/IDBackgroundSvg.svg';
+import IDBackground from '../../../common/icons/IDBackground.svg';
 
 const Wrapper = styled.div`
   display: flex;
@@ -21,20 +21,18 @@ const IDContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url(${IDBackgroundSvg});
+  background-image: url(${IDBackground});
   background-size: 100% auto;
 `;
 
 interface Props {
-  children?: React.ReactNode;
   handleOnClick: () => void;
 }
 
-const IDChecker = ({ children, handleOnClick }: Props) => {
+const IDChecker = ({ handleOnClick }: Props) => {
   return (
     <Wrapper>
       <IDContainer>
-        {children}
         <RoundedButton handleOnClick={handleOnClick}>TAKE PICTURE</RoundedButton>
       </IDContainer>
     </Wrapper>

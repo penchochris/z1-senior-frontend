@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
 import axios from 'axios';
-import Webcam from 'react-webcam';
 
 import Header from '../../components/common/Header/Header';
 import { APPROVED } from '../../consts';
@@ -13,6 +12,9 @@ const Wrapper = styled.div`
   display: flex;
   flex-flow: column;
   height: 100vh;
+  background-color: ${(props:isWebcamOn) => 
+    props.isWebcamOn && 'rgba(20,28,38,0.75)'
+  };
 `;
 
 const WrapperMain = styled.div`
@@ -24,6 +26,10 @@ const WrapperMain = styled.div`
   padding-top: 32px;
 `;
 
+interface isWebcamOn {
+  isWebcamOn: boolean;
+}
+
 interface Summary {
   outcome: string;
 }
@@ -34,39 +40,45 @@ interface ImageStatusResponse {
 
 const ScanCardScene: React.FC = () => {
 
-  const [ isCameraOn, setIsCameraOn ] = useState<boolean>();
+  const [ isWebcamOn, setIsWebcamOn ] = useState<boolean>();
   const [ isRejected, setIsRejected ] = useState<boolean>();
   const [ imageSource, setImageSource ] = useState<string>();
+  
   const webcamRef = React.useRef<any>(null);
 
   useEffect(() => {
     let timer: any;
-    if(isCameraOn) {
+    if(isWebcamOn) {
       timer = setTimeout( async () => {
-        setImageSource(webcamRef.current.getScreenshot());
+        const payload = webcamRef.current.getScreenshot();
+        //Here we should be supposed to send a payload :)
         const { data } = await axios.post<ImageStatusResponse>('https://front-exercise.z1.digital/evaluations');
         
         data.summary && data.summary.outcome === APPROVED
           ? setIsRejected(false)
           : setIsRejected(true);
         
-        setIsCameraOn(false);
+        setImageSource(payload)
+        setIsWebcamOn(false);
       }, 3000);
     }
     return () => clearTimeout(timer);
-  }, [isCameraOn, imageSource, setIsCameraOn, setImageSource, webcamRef]);
+  }, [isWebcamOn, imageSource, setIsWebcamOn, setImageSource, webcamRef]);
 
-  const handleOnClick = () => setIsCameraOn(true);
+  const handleOnClick = () => {
+    setImageSource('');
+    setIsWebcamOn(true);
+  }
 
   return (
-    <Wrapper>
+    <Wrapper isWebcamOn={isWebcamOn}>
       <Header>
-        { !isCameraOn && !imageSource ? 'BankClient' : '' }
+        { !isWebcamOn || imageSource ? 'BankClient' : '' }
       </Header>
       <WrapperMain>
       {
-        isCameraOn
-          ? <ScanID cameraRef={webcamRef}/>
+        isWebcamOn
+          ? <ScanID webcamRef={webcamRef}/>
           : <TakePictureID
               imageSource={imageSource}
               handleOnClick={handleOnClick}

@@ -8,7 +8,6 @@ interface Props {
 
 const Header: React.FC<Props> = ({ children }) => {
 
-  //I'm unable to get props with typescript :(
   const Wrapper = styled.div`
     box-sizing: border-box;
     height: 60px;

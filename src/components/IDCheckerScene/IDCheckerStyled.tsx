@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 
-
 interface OverlayProps {
   isRejected?: boolean;
 }
@@ -52,9 +51,15 @@ export const CameraWrapper = styled.div`
   box-sizing: border-box;
   height: 179px;
   width: 289px;
-  border: ${(props:CameraWrapperProps) => props.isRejected ? '2px solid #C00000' : '2px solid #69CC8B'};
+  border: ${(props:CameraWrapperProps) => 
+    props.isRejected 
+      ? '2px solid #C00000'
+      : '2px solid #69CC8B'
+  };
   border-radius: 18px;
-  background-image: ${(props:CameraWrapperProps) => `url(${props.imageSource})`};
+  background-image: ${(props:CameraWrapperProps) => 
+    `url(${props.imageSource})`
+  };
   background-repeat: no-repeat;
   background-size: 100% 100%;
   position: relative;
