@@ -17,6 +17,7 @@ const ScanID:React.FC<Props> = ({ webcamRef }: Props) =>
           ref={webcamRef}
           height={220}
           width={300}
+          mirrored={true}
           screenshotFormat="image/jpeg"
         />
     </CameraWrapper>
