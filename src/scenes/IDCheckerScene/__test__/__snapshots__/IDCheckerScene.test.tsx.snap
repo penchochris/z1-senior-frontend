@@ -2,7 +2,7 @@
 
 exports[`matches snapshot 1`] = `
 <div
-  className="sc-fzplWN gyOsA-D"
+  className="sc-fznyAO jWQUuP"
 >
   <div
     className="sc-AxjAm gYslqW"
@@ -14,7 +14,7 @@ exports[`matches snapshot 1`] = `
     </h1>
   </div>
   <div
-    className="sc-fznyAO fpNqGb"
+    className="sc-fznKkj cnDexW"
   >
     <h2
       className="sc-AxiKw jXErWB"
@@ -27,17 +27,17 @@ exports[`matches snapshot 1`] = `
       Take a picture. It may take time to validate your personal information
     </p>
     <div
-      className="sc-fzoLsD fGAoDu"
+      className="sc-fzpans fzRXyq"
     >
       <div
-        className="sc-fzpans stybP"
+        className="sc-fzplWN iUmTbq"
       >
         <div
-          className="sc-AxmLO hBfUrY"
+          className="sc-fzozJi fIvUiB"
           onClick={[Function]}
         >
           <p
-            className="sc-fzozJi jAHfIB"
+            className="sc-fzoLsD kyhDmr"
           >
             TAKE PICTURE
           </p>
@@ -50,7 +50,7 @@ exports[`matches snapshot 1`] = `
 
 exports[`matches snapshot when accepts picture 1`] = `
 <div
-  className="sc-fzplWN gyOsA-D"
+  className="sc-fznyAO jWQUuP"
 >
   <div
     className="sc-AxjAm gYslqW"
@@ -62,7 +62,7 @@ exports[`matches snapshot when accepts picture 1`] = `
     </h1>
   </div>
   <div
-    className="sc-fznyAO fpNqGb"
+    className="sc-fznKkj cnDexW"
   >
     <h2
       className="sc-AxiKw jXErWB"
@@ -75,17 +75,17 @@ exports[`matches snapshot when accepts picture 1`] = `
       Take a picture. It may take time to validate your personal information
     </p>
     <div
-      className="sc-fzoLsD fGAoDu"
+      className="sc-fzpans fzRXyq"
     >
       <div
-        className="sc-fzpans stybP"
+        className="sc-fzplWN iUmTbq"
       >
         <div
-          className="sc-AxmLO hBfUrY"
+          className="sc-fzozJi fIvUiB"
           onClick={[Function]}
         >
           <p
-            className="sc-fzozJi jAHfIB"
+            className="sc-fzoLsD kyhDmr"
           >
             TAKE PICTURE
           </p>
@@ -98,7 +98,7 @@ exports[`matches snapshot when accepts picture 1`] = `
 
 exports[`matches snapshot when click TAKE PICTURE button 1`] = `
 <div
-  className="sc-fzplWN gyOsA-D"
+  className="sc-fznyAO jWQUuP"
 >
   <div
     className="sc-AxjAm gYslqW"
@@ -110,7 +110,7 @@ exports[`matches snapshot when click TAKE PICTURE button 1`] = `
     </h1>
   </div>
   <div
-    className="sc-fznyAO fpNqGb"
+    className="sc-fznKkj cnDexW"
   >
     <h2
       className="sc-AxiKw jXErWB"
@@ -123,17 +123,17 @@ exports[`matches snapshot when click TAKE PICTURE button 1`] = `
       Take a picture. It may take time to validate your personal information
     </p>
     <div
-      className="sc-fzoLsD fGAoDu"
+      className="sc-fzpans fzRXyq"
     >
       <div
-        className="sc-fzpans stybP"
+        className="sc-fzplWN iUmTbq"
       >
         <div
-          className="sc-AxmLO hBfUrY"
+          className="sc-fzozJi fIvUiB"
           onClick={[Function]}
         >
           <p
-            className="sc-fzozJi jAHfIB"
+            className="sc-fzoLsD kyhDmr"
           >
             TAKE PICTURE
           </p>
@@ -146,7 +146,7 @@ exports[`matches snapshot when click TAKE PICTURE button 1`] = `
 
 exports[`matches snapshot when rejects picture 1`] = `
 <div
-  className="sc-fzplWN gyOsA-D"
+  className="sc-fznyAO jWQUuP"
 >
   <div
     className="sc-AxjAm gYslqW"
@@ -158,7 +158,7 @@ exports[`matches snapshot when rejects picture 1`] = `
     </h1>
   </div>
   <div
-    className="sc-fznyAO fpNqGb"
+    className="sc-fznKkj cnDexW"
   >
     <h2
       className="sc-AxiKw jXErWB"
@@ -171,17 +171,17 @@ exports[`matches snapshot when rejects picture 1`] = `
       Take a picture. It may take time to validate your personal information
     </p>
     <div
-      className="sc-fzoLsD fGAoDu"
+      className="sc-fzpans fzRXyq"
     >
       <div
-        className="sc-fzpans stybP"
+        className="sc-fzplWN iUmTbq"
       >
         <div
-          className="sc-AxmLO hBfUrY"
+          className="sc-fzozJi fIvUiB"
           onClick={[Function]}
         >
           <p
-            className="sc-fzozJi jAHfIB"
+            className="sc-fzoLsD kyhDmr"
           >
             TAKE PICTURE
           </p>

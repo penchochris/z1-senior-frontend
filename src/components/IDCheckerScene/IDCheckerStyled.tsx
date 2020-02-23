@@ -84,5 +84,18 @@ export const OverlayWrapper = styled.div`
   position: relative;
 `;
 
+export const Cancel = styled.div`
+	height: 24px;
+	width: 66.5px;
+	color: #FFFFFF;
+	font-family: Roboto;
+	font-size: 16px;
+	font-weight: bold;
+	letter-spacing: 0.35px;
+	line-height: 24px;
+  text-align: center;
+  padding-top: 170px;
+`;
+
 
 

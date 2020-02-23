@@ -67,13 +67,19 @@ const ScanCardScene: React.FC = () => {
     setIsWebcamOn(true);
   }
 
+  const handleCancel = () => {
+    setImageSource('');
+    setIsWebcamOn(false);
+    setIsRejected(undefined);
+  }
+
   return (
     <Wrapper isWebcamOn={isWebcamOn}>
       <Header label={ !isWebcamOn || imageSource ? 'BankClient' : '' }/>
       <WrapperMain>
       {
         isWebcamOn
-          ? <ScanID webcamRef={webcamRef}/>
+          ? <ScanID webcamRef={webcamRef} handleCancel={handleCancel}/>
           : <TakePictureID
               imageSource={imageSource}
               handleOnClick={handleOnClick}
