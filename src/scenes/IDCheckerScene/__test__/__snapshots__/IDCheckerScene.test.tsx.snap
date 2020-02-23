@@ -1,0 +1,193 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches snapshot 1`] = `
+<div
+  className="sc-fzplWN gyOsA-D"
+>
+  <div
+    className="sc-AxjAm gYslqW"
+  >
+    <h1
+      className="sc-AxirZ fCAmhS"
+    >
+      BankClient
+    </h1>
+  </div>
+  <div
+    className="sc-fznyAO fpNqGb"
+  >
+    <h2
+      className="sc-AxiKw jXErWB"
+    >
+      Scan your ID
+    </h2>
+    <p
+      className="sc-AxhCb jIBAms"
+    >
+      Take a picture. It may take time to validate your personal information
+    </p>
+    <div
+      className="sc-fzoLsD fGAoDu"
+    >
+      <div
+        className="sc-fzpans stybP"
+      >
+        <div
+          className="sc-AxmLO hBfUrY"
+          onClick={[Function]}
+        >
+          <p
+            className="sc-fzozJi jAHfIB"
+          >
+            TAKE PICTURE
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`matches snapshot when accepts picture 1`] = `
+<div
+  className="sc-fzplWN gyOsA-D"
+>
+  <div
+    className="sc-AxjAm gYslqW"
+  >
+    <h1
+      className="sc-AxirZ fCAmhS"
+    >
+      BankClient
+    </h1>
+  </div>
+  <div
+    className="sc-fznyAO fpNqGb"
+  >
+    <h2
+      className="sc-AxiKw jXErWB"
+    >
+      Scan your ID
+    </h2>
+    <p
+      className="sc-AxhCb jIBAms"
+    >
+      Take a picture. It may take time to validate your personal information
+    </p>
+    <div
+      className="sc-fzoLsD fGAoDu"
+    >
+      <div
+        className="sc-fzpans stybP"
+      >
+        <div
+          className="sc-AxmLO hBfUrY"
+          onClick={[Function]}
+        >
+          <p
+            className="sc-fzozJi jAHfIB"
+          >
+            TAKE PICTURE
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`matches snapshot when click TAKE PICTURE button 1`] = `
+<div
+  className="sc-fzplWN gyOsA-D"
+>
+  <div
+    className="sc-AxjAm gYslqW"
+  >
+    <h1
+      className="sc-AxirZ fCAmhS"
+    >
+      BankClient
+    </h1>
+  </div>
+  <div
+    className="sc-fznyAO fpNqGb"
+  >
+    <h2
+      className="sc-AxiKw jXErWB"
+    >
+      Scan your ID
+    </h2>
+    <p
+      className="sc-AxhCb jIBAms"
+    >
+      Take a picture. It may take time to validate your personal information
+    </p>
+    <div
+      className="sc-fzoLsD fGAoDu"
+    >
+      <div
+        className="sc-fzpans stybP"
+      >
+        <div
+          className="sc-AxmLO hBfUrY"
+          onClick={[Function]}
+        >
+          <p
+            className="sc-fzozJi jAHfIB"
+          >
+            TAKE PICTURE
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`matches snapshot when rejects picture 1`] = `
+<div
+  className="sc-fzplWN gyOsA-D"
+>
+  <div
+    className="sc-AxjAm gYslqW"
+  >
+    <h1
+      className="sc-AxirZ fCAmhS"
+    >
+      BankClient
+    </h1>
+  </div>
+  <div
+    className="sc-fznyAO fpNqGb"
+  >
+    <h2
+      className="sc-AxiKw jXErWB"
+    >
+      Scan your ID
+    </h2>
+    <p
+      className="sc-AxhCb jIBAms"
+    >
+      Take a picture. It may take time to validate your personal information
+    </p>
+    <div
+      className="sc-fzoLsD fGAoDu"
+    >
+      <div
+        className="sc-fzpans stybP"
+      >
+        <div
+          className="sc-AxmLO hBfUrY"
+          onClick={[Function]}
+        >
+          <p
+            className="sc-fzozJi jAHfIB"
+          >
+            TAKE PICTURE
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

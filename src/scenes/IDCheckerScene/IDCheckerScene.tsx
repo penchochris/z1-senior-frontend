@@ -7,7 +7,6 @@ import { APPROVED } from '../../consts';
 import ScanID from '../../components/IDCheckerScene/ScanID/ScanID';
 import TakePictureID from '../../components/IDCheckerScene/TakePictureID/TakePictureID';
 
-//TODO: background to camera.
 const Wrapper = styled.div`
   display: flex;
   flex-flow: column;
@@ -30,12 +29,10 @@ interface isWebcamOn {
   isWebcamOn: boolean;
 }
 
-interface Summary {
-  outcome: string;
-}
-
 interface ImageStatusResponse {
-  summary: Summary;
+  summary: {
+    outcome: string;
+  };
 }
 
 const ScanCardScene: React.FC = () => {
@@ -72,9 +69,7 @@ const ScanCardScene: React.FC = () => {
 
   return (
     <Wrapper isWebcamOn={isWebcamOn}>
-      <Header>
-        { !isWebcamOn || imageSource ? 'BankClient' : '' }
-      </Header>
+      <Header label={ !isWebcamOn || imageSource ? 'BankClient' : '' }/>
       <WrapperMain>
       {
         isWebcamOn

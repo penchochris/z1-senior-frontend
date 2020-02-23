@@ -23,7 +23,4 @@ const ScanID:React.FC<Props> = ({ webcamRef }: Props) =>
     </CameraWrapper>
   </>
 
-
-
-
 export default ScanID;
